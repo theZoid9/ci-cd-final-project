@@ -29,7 +29,7 @@ jobs:
           python --version
           python -m pip install --upgrade pip
           pip install flake8 nose coverage
-          pip install -r requirements.txt
+          pip install -r ./requirements.txt
 
       - name: Run lint checks
         run: |
@@ -39,3 +39,4 @@ jobs:
       - name: Run unit tests
         run: |
           nosetests -v --with-coverage --cover-package=app
+###rwrwr
