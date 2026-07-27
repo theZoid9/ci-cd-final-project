@@ -23,6 +23,7 @@ jobs:
         run: |
           pwd
           ls -la
+          find /__w -name "requirements.txt"
 
       - name: Install dependencies
         run: |
